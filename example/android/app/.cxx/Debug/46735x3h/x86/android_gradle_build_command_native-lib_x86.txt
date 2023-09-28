@@ -1,0 +1,7 @@
+Executable : C:\Users\609412\AppData\Local\Android\Sdk\cmake\3.18.1\bin\ninja.exe
+arguments : 
+-C
+F:\Projects\Flutter\RJSniffer\rjsniffer\example\android\app\.cxx\Debug\46735x3h\x86
+native-lib
+jvmArgs : 
+

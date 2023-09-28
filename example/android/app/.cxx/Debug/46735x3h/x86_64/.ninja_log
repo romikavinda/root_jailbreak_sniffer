@@ -1,0 +1,17 @@
+# ninja log v5
+2	778	716290063	CMakeFiles/native-lib.dir/src/main/c/native-lib.c.o	5693ac2c9901e0f7
+780	1261	716290064	F:/Projects/Flutter/RJSniffer/rjsniffer/example/build/app/intermediates/cxx/Debug/46735x3h/obj/x86_64/libnative-lib.so	cfaa68e4aa3d8e39
+0	102	0	clean	a3874352ac49c7b0
+0	60	0	clean	a3874352ac49c7b0
+116	3263	716300058	CMakeFiles/native-lib.dir/src/main/c/native-lib.c.o	5693ac2c9901e0f7
+3263	5294	716300060	F:/Projects/Flutter/RJSniffer/rjsniffer/example/build/app/intermediates/cxx/Debug/46735x3h/obj/x86_64/libnative-lib.so	cfaa68e4aa3d8e39
+0	63	0	clean	a3874352ac49c7b0
+0	24	0	clean	a3874352ac49c7b0
+43	1324	716300360	CMakeFiles/native-lib.dir/src/main/c/native-lib.c.o	5693ac2c9901e0f7
+1324	2167	716300361	F:/Projects/Flutter/RJSniffer/rjsniffer/example/build/app/intermediates/cxx/Debug/46735x3h/obj/x86_64/libnative-lib.so	cfaa68e4aa3d8e39
+1	18	0	clean	a3874352ac49c7b0
+0	17	0	clean	a3874352ac49c7b0
+4	227	716300530	CMakeFiles/native-lib.dir/src/main/c/native-lib.c.o	5693ac2c9901e0f7
+227	947	716300531	F:/Projects/Flutter/RJSniffer/rjsniffer/example/build/app/intermediates/cxx/Debug/46735x3h/obj/x86_64/libnative-lib.so	cfaa68e4aa3d8e39
+1	20	0	clean	a3874352ac49c7b0
+1	19	0	clean	a3874352ac49c7b0

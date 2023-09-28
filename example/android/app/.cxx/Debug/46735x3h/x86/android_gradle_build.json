@@ -1,0 +1,38 @@
+{
+  "buildFiles": [
+    "F:\\Projects\\Flutter\\RJSniffer\\rjsniffer\\example\\android\\app\\CMakeLists.txt"
+  ],
+  "cleanCommandsComponents": [
+    [
+      "C:\\Users\\609412\\AppData\\Local\\Android\\Sdk\\cmake\\3.18.1\\bin\\ninja.exe",
+      "-C",
+      "F:\\Projects\\Flutter\\RJSniffer\\rjsniffer\\example\\android\\app\\.cxx\\Debug\\46735x3h\\x86",
+      "clean"
+    ]
+  ],
+  "buildTargetsCommandComponents": [
+    "C:\\Users\\609412\\AppData\\Local\\Android\\Sdk\\cmake\\3.18.1\\bin\\ninja.exe",
+    "-C",
+    "F:\\Projects\\Flutter\\RJSniffer\\rjsniffer\\example\\android\\app\\.cxx\\Debug\\46735x3h\\x86",
+    "{LIST_OF_TARGETS_TO_BUILD}"
+  ],
+  "libraries": {
+    "native-lib::@6890427a1f51a3e7e1df": {
+      "toolchain": "toolchain",
+      "abi": "x86",
+      "artifactName": "native-lib",
+      "output": "F:\\Projects\\Flutter\\RJSniffer\\rjsniffer\\example\\build\\app\\intermediates\\cxx\\Debug\\46735x3h\\obj\\x86\\libnative-lib.so",
+      "runtimeFiles": []
+    }
+  },
+  "toolchains": {
+    "toolchain": {
+      "cCompilerExecutable": "C:\\Users\\609412\\AppData\\Local\\Android\\Sdk\\ndk\\23.1.7779620\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang.exe",
+      "cppCompilerExecutable": "C:\\Users\\609412\\AppData\\Local\\Android\\Sdk\\ndk\\23.1.7779620\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe"
+    }
+  },
+  "cFileExtensions": [
+    "c"
+  ],
+  "cppFileExtensions": []
+}

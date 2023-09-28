@@ -1,0 +1,7 @@
+[
+{
+  "directory": "F:/Projects/Flutter/RJSniffer/rjsniffer/example/android/app/.cxx/Debug/46735x3h/x86",
+  "command": "C:\\Users\\609412\\AppData\\Local\\Android\\Sdk\\ndk\\23.1.7779620\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang.exe --target=i686-none-linux-android16 --gcc-toolchain=C:/Users/609412/AppData/Local/Android/Sdk/ndk/23.1.7779620/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/609412/AppData/Local/Android/Sdk/ndk/23.1.7779620/toolchains/llvm/prebuilt/windows-x86_64/sysroot -Dnative_lib_EXPORTS -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -fno-limit-debug-info  -fPIC -o CMakeFiles\\native-lib.dir\\src\\main\\c\\native-lib.c.o -c F:\\Projects\\Flutter\\RJSniffer\\rjsniffer\\example\\android\\app\\src\\main\\c\\native-lib.c",
+  "file": "F:/Projects/Flutter/RJSniffer/rjsniffer/example/android/app/src/main/c/native-lib.c"
+}
+]
