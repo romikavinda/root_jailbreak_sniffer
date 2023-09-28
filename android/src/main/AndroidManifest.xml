@@ -2,7 +2,6 @@
   package="com.emrys.rjsniffer.rjsniffer">
 
     <application
-        android:label="rjsniffer_example"
         android:zygotePreloadName=".AppZygotePreload">
 
         <meta-data
