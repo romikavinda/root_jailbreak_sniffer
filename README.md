@@ -24,7 +24,7 @@ or add the below line to your package's pubspec.yaml:
 
 ```
 dependencies:
-  root_jailbreak_sniffer: ^1.0.2
+  root_jailbreak_sniffer: ^1.0.3
 
 ```
 
