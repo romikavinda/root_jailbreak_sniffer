@@ -53,9 +53,9 @@ Add following lines to the Info.plist file in /ios/Runner/ folder.
 ```
 import 'package:root_jailbreak_sniffer/rjsniffer.dart';
 
-    bool amICompromised = await RJSniffer.amICompromised() ?? false;     //Detect JailBreak and Root
-    bool amIEmulator = await RJSniffer.amIEmulator() ?? false;           //Detect Emulator Environment
-    bool amIDebugged = await RJSniffer.amIDebugged() ?? false;           //Detect being Debugged
+    bool amICompromised = await Rjsniffer.amICompromised() ?? false;     //Detect JailBreak and Root
+    bool amIEmulator = await Rjsniffer.amIEmulator() ?? false;           //Detect Emulator Environment
+    bool amIDebugged = await Rjsniffer.amIDebugged() ?? false;           //Detect being Debugged
 
 ```
 
