@@ -6,3 +6,5 @@
 * Readme updated
 ## 1.0.3
 * Readme updated
+* ## 1.0.4
+* Performance Enhanced
