@@ -9,6 +9,6 @@
 ## 1.0.4
 * Performance Enhanced
 ## 1.0.5
-* Zygote preload fixed
+* Zygote preload fixed manifest fix
 ## 1.0.6
 * Performance Enhanced
