@@ -51,7 +51,9 @@ android {
         implementation 'com.scottyab:rootbeer-lib:0.1.0'
     }
 
-
+    if (project.android.hasProperty('namespace')) {
+        namespace 'com.romikavinda.root_jailbreak_sniffer'
+    }
 }
 
 
