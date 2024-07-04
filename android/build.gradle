@@ -30,7 +30,7 @@ android {
     }
 
     defaultConfig {
-        minSdkVersion 16
+        minSdkVersion 21
     }
 
 
@@ -52,7 +52,7 @@ android {
     }
 
     if (project.android.hasProperty('namespace')) {
-        namespace 'com.romikavinda.root_jailbreak_sniffer'
+        namespace 'com.emrys.rjsniffer.rjsniffer'
     }
 }
 
