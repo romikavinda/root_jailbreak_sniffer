@@ -12,9 +12,9 @@ and
 [IOSSecuritySuite](https://github.com/securing/IOSSecuritySuite)
 for iOS.
 
-# Getting Started
+## Getting Started
 
-## Install
+# Install
 ```
 $ flutter pub add root_jailbreak_sniffer
 
@@ -27,13 +27,19 @@ dependencies:
   root_jailbreak_sniffer: ^1.0.6
 
 ```
+for gradle 8.0 upwards
+```
+dependencies:
+  root_jailbreak_sniffer: ^1.0.7
 
-# Platform Based Configurations
+```
 
-## Android
+## Platform Based Configurations
+
+# Android
 No Configurations Needed.
 
-## iOS
+# iOS
 Add following lines to the Info.plist file in /ios/Runner/ folder.
 
 ```
@@ -48,7 +54,7 @@ Add following lines to the Info.plist file in /ios/Runner/ folder.
 
 ```
 
-# Usage
+## Usage
 
 ```
 import 'package:root_jailbreak_sniffer/rjsniffer.dart';

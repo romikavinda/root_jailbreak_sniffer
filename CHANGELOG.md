@@ -9,6 +9,8 @@
 ## 1.0.4
 * Performance Enhanced
 ## 1.0.5
-* Zygote preload fixed manifest fix
+* Zygote preload fixed
 ## 1.0.6
 * Performance Enhanced
+## 1.0.7
+* Gradle 8 Support added. Tested with Gradle 8.0.7 & Flutter 3.24.3

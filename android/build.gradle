@@ -8,7 +8,7 @@ buildscript {
     }
 
     dependencies {
-        classpath 'com.android.tools.build:gradle:7.2.0'
+        classpath("com.android.tools.build:gradle:8.7.0")
     }
 }
 
@@ -19,18 +19,24 @@ rootProject.allprojects {
     }
 }
 
-apply plugin: 'com.android.library'
+apply plugin: "com.android.library"
 
 android {
-    compileSdkVersion 31
+
+    if (project.android.hasProperty("namespace")) {
+        namespace "com.emrys.rjsniffer.rjsniffer"
+    }
+
+    compileSdk 34
+
 
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
     }
 
     defaultConfig {
-        minSdkVersion 16
+        minSdk = 21
     }
 
 
@@ -48,8 +54,21 @@ android {
     }
 
     dependencies {
+        testImplementation("junit:junit:4.13.2")
+        testImplementation("org.mockito:mockito-core:5.0.0")
         implementation 'com.scottyab:rootbeer-lib:0.1.0'
     }
+
+    testOptions {
+        unitTests.all {
+            testLogging {
+                events "passed", "skipped", "failed", "standardOut", "standardError"
+                outputs.upToDateWhen {false}
+                showStandardStreams = true
+            }
+        }
+    }
+    ndkVersion '21.4.7075529'
 
 
 }

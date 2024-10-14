@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
@@ -12,7 +14,13 @@ class MethodChannelRjsniffer extends RjsnifferPlatform {
   @override
   Future<bool?> amICompromised() async {
     final compromised = await methodChannel.invokeMethod<bool>('runprog');
-    return compromised;
+
+    if (compromised == false && Platform.isAndroid) {
+      final magisk = await methodChannel.invokeMethod<bool>('runprog4');
+      return magisk;
+    } else {
+      return compromised;
+    }
   }
 
   @override
