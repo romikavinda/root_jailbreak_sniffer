@@ -4,14 +4,14 @@
 #
 Pod::Spec.new do |s|
   s.name             = 'root_jailbreak_sniffer'
-  s.version          = '1.0.1'
+  s.version          = '1.0.7'
   s.summary          = 'A Flutter Plugin to detect root on android and JailBreak on iOS'
   s.description      = <<-DESC
 A Flutter Plugin to detect root on android and JailBreak on iOS
                        DESC
   s.homepage         = 'https://github.com/romikavinda/root_jailbreak_sniffer'
   s.license          = { :file => '../LICENSE' }
-  s.author           = { 'romikavinda' => '' }
+  s.author           = { 'romikavinda' => 'romikavinda@yahoo.com' }
   s.source           = { :path => '.' }
   s.source_files = 'Classes/**/*'
   s.dependency 'Flutter'

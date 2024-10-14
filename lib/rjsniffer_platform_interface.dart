@@ -23,15 +23,15 @@ abstract class RjsnifferPlatform extends PlatformInterface {
     _instance = instance;
   }
 
-  Future<bool?> amICompromised() {
+  Future<bool?> amICompromised() async {
     throw UnimplementedError('amICompromised() has not been implemented.');
   }
 
-  Future<bool?> amIEmulator() {
+  Future<bool?> amIEmulator() async {
     throw UnimplementedError('amIEmulator() has not been implemented.');
   }
 
-  Future<bool?> amIDebugged() {
+  Future<bool?> amIDebugged() async {
     throw UnimplementedError('amIDebugged() has not been implemented.');
   }
 }

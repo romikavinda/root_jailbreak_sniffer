@@ -15,6 +15,7 @@ import android.os.IBinder;
 import android.os.RemoteException;
 import android.provider.Settings;
 
+
 import androidx.annotation.NonNull;
 
 import com.scottyab.rootbeer.RootBeer;
@@ -68,102 +69,110 @@ public class RjsnifferPlugin implements FlutterPlugin, MethodCallHandler {
   @Override
   public void onMethodCall(@NonNull MethodCall call, @NonNull Result result) {
 
-    Intent intent = new Intent(context.getApplicationContext(),Sniffer.class);
-    context.getApplicationContext().bindService(intent, mIsolatedServiceConnection, BIND_AUTO_CREATE);
+    try {
+      Intent intent = new Intent(context.getApplicationContext(), Sniffer.class);
+      context.getApplicationContext().bindService(intent, mIsolatedServiceConnection, BIND_AUTO_CREATE);
 
-    if (call.method.equals("runprog")) {
+      if (call.method.equals("runprog")) {
 
-      boolean detected = false;
+        boolean detected = false;
 
-      RootBeer rootBeer = new RootBeer(context);
+        RootBeer rootBeer = new RootBeer(context);
 
-      if(Build.BRAND.contains(ONEPLUS) || Build.BRAND.contains(MOTO) || Build.BRAND.contains(XIAOMI)){
+        if (Build.BRAND.contains(ONEPLUS) || Build.BRAND.contains(MOTO) || Build.BRAND.contains(XIAOMI)) {
 
-        if(rootBeer.isRooted()){
-          detected = true;
+          if (rootBeer.isRooted()) {
+            detected = true;
+          }
+
+        } else {
+          if (rootBeer.isRootedWithBusyBoxCheck()) {
+            detected = true;
+          }
+
         }
 
-      }else{
-        if(rootBeer.isRootedWithBusyBoxCheck()){
-          detected = true;
+        try {
+
+          if (isPathExist("su")
+                  || isSUExist()
+                  || isTestBuildKey()
+                  || isHaveRootHideApps()
+                  || isHaveDangerousApps()
+                  || isHaveRootManagementApps()
+                  || isHaveDangerousProperties()
+                  || isHaveReadWritePermission()) {
+
+            detected = true;
+
+          }
+        } catch (Exception e) {
+          e.printStackTrace();
         }
-      }
-
-
-
-      if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.P)
-      {
 
 
         try {
-          detected = serviceBinder.isMagiskPresent();
-        } catch (RemoteException e) {
-          throw new RuntimeException(e);
+
+          if (checkRootMethod8() || checkRootMethod9()) {
+
+            detected = true;
+
+          }
+        } catch (Exception e) {
+
+          e.printStackTrace();
         }
 
 
-      }
-      else
-      {
+        result.success(detected);
 
-        detected = isMagisk();
-      }
+      } else if (call.method.equals("runprog2")) {
+        boolean detected = false;
 
-
-      try {
-
-        if (isPathExist("su")
-                || isSUExist()
-                || isTestBuildKey()
-                || isHaveRootHideApps()
-                || isHaveDangerousApps()
-                || isHaveRootManagementApps()
-                || isHaveDangerousProperties()
-                || isHaveReadWritePermission()) {
-
+        if (Emulate.isEmulator() || Emulate.isEmulator2()) {
           detected = true;
-
         }
-      }catch(Exception e){
-        e.printStackTrace();
-      }
+
+        result.success(detected);
+      } else if (call.method.equals("runprog3")) {
 
 
-
-      try {
-
-        if (checkRootMethod7() || checkRootMethod8() || checkRootMethod9()) {
-
-          detected = true;
-
+        if (Settings.Secure.getInt(context.getContentResolver(), Settings.Global.ADB_ENABLED, 0) == 1 || AntiFridaNativeLoader_checkFridaByPort()) {
+          result.success(true);
+        } else {
+          result.success(false);
         }
-      }catch(Exception e){
 
-        e.printStackTrace();
+
+      }else if (call.method.equals("runprog4")) {
+
+        boolean detected = false;
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.P) {
+
+
+          try {
+
+            if (bServiceBound){
+              detected = serviceBinder.isMagiskPresent();
+            }
+
+          } catch (RemoteException e) {
+            throw new RuntimeException(e);
+          }
+
+
+        } else {
+          detected = isMagisk();
+        }
+
+
+        result.success(detected);
       }
 
-
-      result.success(detected);
-
-    }else if (call.method.equals("runprog2")) {
-      boolean detected = false;
-
-      if(Emulate.isEmulator() || Emulate.isEmulator2()){
-        detected = true;
-      }
-
-      result.success(detected);
-    }else if (call.method.equals("runprog3")) {
-
-
-      if(Settings.Secure.getInt(context.getContentResolver(), Settings.Global.ADB_ENABLED, 0) == 1 || AntiFridaNativeLoader_checkFridaByPort()) {
-        result.success(true);
-      }else{
-        result.success(false);
-      }
-
-
+    }catch (Exception e){
+      e.printStackTrace();
     }
+
   }
 
 

@@ -1,11 +1,11 @@
 name: root_jailbreak_sniffer
-description: A Flutter Plugin to detect root on android and JailBreak on iOS
-version: 1.0.1
-homepage: https://github.com/romikavinda?tab=repositories
+description: A Flutter Plugin to detect root including magiskhide to some extent on android and JailBreak on iOS
+version: 1.0.7
+repository: https://github.com/romikavinda/root_jailbreak_sniffer
 
 environment:
-  sdk: '>=2.19.4 <4.0.0'
-  flutter: ">=2.5.0"
+  sdk: ^3.5.3
+  flutter: '>=3.3.0'
 
 dependencies:
   flutter:
