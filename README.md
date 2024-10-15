@@ -30,7 +30,7 @@ dependencies:
 for gradle 8.0 upwards
 ```
 dependencies:
-  root_jailbreak_sniffer: ^1.0.7
+  root_jailbreak_sniffer: ^1.0.8
 
 ```
 

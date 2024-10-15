@@ -7,9 +7,9 @@ buildscript {
         mavenCentral()
     }
 
-    dependencies {
+/*    dependencies {
         classpath("com.android.tools.build:gradle:8.7.0")
-    }
+    }*/
 }
 
 rootProject.allprojects {
