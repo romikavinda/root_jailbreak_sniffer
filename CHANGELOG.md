@@ -1,3 +1,6 @@
+## 1.0.9
+* Readme updated
+
 ## 1.0.8
 * Dependency on Gradle 8.7.0 removed. Now works on Gradle 8.0.0 onwards
 
