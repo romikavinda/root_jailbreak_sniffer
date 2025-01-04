@@ -30,11 +30,20 @@ public class Emulate {
 
 
     public static boolean isEmulator(){
+        /*        Log.e("*********",Build.MANUFACTURER);
+        Log.e("*********",Build.MODEL);
+        Log.e("*********",Build.HARDWARE);
+        Log.e("*********",Build.PRODUCT);
+        Log.e("*********",Build.BOARD);*/
+
         return Build.MANUFACTURER.contains("Genymotion")
                 || Build.MODEL.contains("google_sdk")
+                || Build.MODEL.contains("sdk_gphone64_x86_64")
                 || Build.MODEL.toLowerCase().contains("droid4x")
                 || Build.MODEL.contains("Emulator")
                 || Build.MODEL.contains("Android SDK built for x86")
+                || Build.HARDWARE.toLowerCase().contains("goldfish")
+                || Build.HARDWARE == "goldfish_x86_64"
                 || Build.HARDWARE == "goldfish"
                 || Build.HARDWARE == "vbox86"
                 || Build.HARDWARE.toLowerCase().contains("nox")
