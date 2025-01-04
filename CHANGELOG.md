@@ -1,3 +1,6 @@
+## 1.1.0
+* goldfish_x86_64 parameter added for latest google emulator detection.
+  
 ## 1.0.9
 * Readme updated
 
