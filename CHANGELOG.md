@@ -1,3 +1,6 @@
+## 1.1.1
+* Rootbeer version updated to 0.1.1 for Android 15 AOSP page size 16KB.
+
 ## 1.1.0
 * goldfish_x86_64 parameter added for emulator detection.
   
