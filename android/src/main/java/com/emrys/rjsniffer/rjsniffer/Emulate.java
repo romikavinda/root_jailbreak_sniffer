@@ -5,6 +5,7 @@ import android.os.Build;
 import java.io.File;
 import java.util.ArrayList;
 import java.util.Arrays;
+import android.util.Log;
 
 public class Emulate {
 
@@ -38,12 +39,11 @@ public class Emulate {
 
         return Build.MANUFACTURER.contains("Genymotion")
                 || Build.MODEL.contains("google_sdk")
-                || Build.MODEL.contains("sdk_gphone64_x86_64")
+                || Build.MODEL.contains("sdk_gphone64")
                 || Build.MODEL.toLowerCase().contains("droid4x")
                 || Build.MODEL.contains("Emulator")
                 || Build.MODEL.contains("Android SDK built for x86")
                 || Build.HARDWARE.toLowerCase().contains("goldfish")
-                || Build.HARDWARE == "goldfish_x86_64"
                 || Build.HARDWARE == "goldfish"
                 || Build.HARDWARE == "vbox86"
                 || Build.HARDWARE.toLowerCase().contains("nox")
@@ -53,7 +53,10 @@ public class Emulate {
                 || Build.PRODUCT == "sdk_x86"
                 || Build.PRODUCT == "vbox86p"
                 || Build.PRODUCT.toLowerCase().contains("nox")
+                || Build.PRODUCT.toLowerCase().contains("sdk_gphone64")
+                || Build.PRODUCT.toLowerCase().contains("goldfish")
                 || Build.BOARD.toLowerCase().contains("nox")
+                || Build.BOARD.toLowerCase().contains("goldfish")
                 || (Build.BRAND.startsWith("generic") && Build.DEVICE.startsWith("generic"));
     }
 
