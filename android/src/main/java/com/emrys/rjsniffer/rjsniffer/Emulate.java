@@ -1,6 +1,7 @@
 package com.emrys.rjsniffer.rjsniffer;
 
 import android.os.Build;
+import android.os.Environment;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -13,6 +14,7 @@ public class Emulate {
             "/dev/socket/baseband_genyd",
             "/dev/socket/qemud",
             "/dev/qemu_pipe",
+            "/mnt/windows",
             "ueventd.android_x86.rc",
             "x86.prop",
             "ueventd.ttVM_x86.rc",
