@@ -11,6 +11,6 @@ import androidx.annotation.RequiresApi;
 public class AppZygotePreload implements ZygotePreload {
     @Override
     public void doPreload(@NonNull ApplicationInfo appInfo) {
-        System.loadLibrary("native-lib");
+        System.loadLibrary("nrjsniffer-lib");
     }
 }

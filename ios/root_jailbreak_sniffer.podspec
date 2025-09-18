@@ -4,7 +4,7 @@
 #
 Pod::Spec.new do |s|
   s.name             = 'root_jailbreak_sniffer'
-  s.version          = '1.0.7'
+  s.version          = '1.1.2'
   s.summary          = 'A Flutter Plugin to detect root on android and JailBreak on iOS'
   s.description      = <<-DESC
 A Flutter Plugin to detect root on android and JailBreak on iOS

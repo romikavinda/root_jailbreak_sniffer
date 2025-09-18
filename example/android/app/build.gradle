@@ -10,7 +10,8 @@ android {
         namespace "com.emrys.rjsniffer.rjsniffer_example"
     }
     compileSdk = flutter.compileSdkVersion
-    ndkVersion = flutter.ndkVersion
+    ndkVersion = "29.0.14033849"
+
 
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_17
@@ -37,6 +38,9 @@ android {
             // TODO: Add your own signing config for the release build.
             // Signing with the debug keys for now, so `flutter run --release` works.
             signingConfig = signingConfigs.debug
+            minifyEnabled true  // Enables code minification
+            shrinkResources true // Removes unused resources
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
 }

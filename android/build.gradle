@@ -7,9 +7,9 @@ buildscript {
         mavenCentral()
     }
 
-    dependencies {
+/*    dependencies {
         classpath("com.android.tools.build:gradle:8.7.0")
-    }
+    }*/
 }
 
 rootProject.allprojects {
@@ -56,7 +56,7 @@ android {
     dependencies {
         testImplementation("junit:junit:4.13.2")
         testImplementation("org.mockito:mockito-core:5.0.0")
-        implementation 'com.scottyab:rootbeer-lib:0.1.0'
+        implementation 'com.scottyab:rootbeer-lib:0.1.1'
     }
 
     testOptions {
@@ -68,7 +68,7 @@ android {
             }
         }
     }
-    ndkVersion '21.4.7075529'
+    ndkVersion '29.0.14033849'
 
 
 }

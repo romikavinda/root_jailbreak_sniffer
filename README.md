@@ -22,15 +22,18 @@ $ flutter pub add root_jailbreak_sniffer
 
 or add the below line to your package's pubspec.yaml:
 
+
+for Flutter SDK below 3.19.0 & Gradle version below 8.0
 ```
 dependencies:
   root_jailbreak_sniffer: ^1.0.6
 
 ```
-for gradle 8.0 upwards
+
+for Flutter SDK 3.19 & above with gradle 8 support (JAVA 17 Support)
 ```
 dependencies:
-  root_jailbreak_sniffer: ^1.0.7
+  root_jailbreak_sniffer: ^1.1.2
 
 ```
 

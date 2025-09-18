@@ -3,7 +3,7 @@ package com.emrys.rjsniffer.rjsniffer;
 class Native {
 
     static {
-        System.loadLibrary("native-lib");
+        System.loadLibrary("rjsniffer-lib");
     }
 
     static native boolean isMagiskPresentNative();
