@@ -1,3 +1,6 @@
+## 1.1.3
+* lib file typo fixed.
+
 ## 1.1.2
 * NDK version updated to support Android 15 AOSP page size 16KB.
 

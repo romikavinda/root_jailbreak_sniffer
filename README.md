@@ -33,7 +33,7 @@ dependencies:
 for Flutter SDK 3.19 & above with gradle 8 support (JAVA 17 Support)
 ```
 dependencies:
-  root_jailbreak_sniffer: ^1.1.2
+  root_jailbreak_sniffer: ^1.1.3
 
 ```
 
