@@ -1,3 +1,6 @@
+## 1.1.4
+* iOSSecuritySuite pinned to 1.9.10 for License issues.
+
 ## 1.1.3
 * lib file typo fixed.
 

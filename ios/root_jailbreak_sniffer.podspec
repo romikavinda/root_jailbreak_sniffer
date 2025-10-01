@@ -4,7 +4,7 @@
 #
 Pod::Spec.new do |s|
   s.name             = 'root_jailbreak_sniffer'
-  s.version          = '1.1.3'
+  s.version          = '1.1.4'
   s.summary          = 'A Flutter Plugin to detect root on android and JailBreak on iOS'
   s.description      = <<-DESC
 A Flutter Plugin to detect root on android and JailBreak on iOS
@@ -15,7 +15,7 @@ A Flutter Plugin to detect root on android and JailBreak on iOS
   s.source           = { :path => '.' }
   s.source_files = 'Classes/**/*'
   s.dependency 'Flutter'
-  s.dependency 'IOSSecuritySuite'
+  s.dependency       'IOSSecuritySuite', '~> 1.9.10'
   s.platform = :ios, '10.0'
 
   # Flutter.framework does not contain a i386 slice.

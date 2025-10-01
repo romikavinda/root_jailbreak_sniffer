@@ -33,7 +33,7 @@ dependencies:
 for Flutter SDK 3.19 & above with gradle 8 support (JAVA 17 Support)
 ```
 dependencies:
-  root_jailbreak_sniffer: ^1.1.3
+  root_jailbreak_sniffer: ^1.1.4
 
 ```
 
@@ -44,6 +44,7 @@ No Configurations Needed.
 
 # iOS
 Add following lines to the Info.plist file in /ios/Runner/ folder.
+Starting from rjsniffer 1.1.4 iOSSecuritySuite has been pinned to 1.9.10 for license issues.
 
 ```
 <key>LSApplicationQueriesSchemes</key>
